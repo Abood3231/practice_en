@@ -1,0 +1,261 @@
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --third-color: ;
+    --forth-color: ;
+
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+
+    --heading-color: ;
+    --pragrgh-color: ;
+
+    --line-h: 1.4;
+
+    --main-duration: 0.5s;
+}
+
+
+/************************** Colors ************************/
+/* group-1: 
+
+*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+/* ------------------- Start Header ----------------- */
+
+header {
+    background-color: var(--main-color);
+}
+
+header .container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container .logo {
+    clip-path: circle();
+    width: 50px;
+    height: 50px;
+}
+
+header .container h1 {
+    margin: 0;
+    color: yellow;
+}
+
+header .container .links {
+    position: relative;
+}
+
+header .container .links i {}
+
+header .container .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .container .links ul li {
+    padding: 10px;
+}
+
+
+header .container .links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .container .links ul li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+
+
+/* ------------------- End Header ----------------- */
+
+/* ------------------- Start Landing ----------------- */
+
+.landing {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: 105vh;
+    position: relative;
+}
+
+.landing::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+}
+
+
+.landing .intro-text {
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+/* ------------------- End Landing ----------------- */
+
+/* ------------------- Start Features ----------------- */
+
+.features {
+    padding: var(--section-padding) 0;
+}
+
+.features .container {
+    padding: 30px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #555;
+}
+
+.features .container .feat-conta {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start ; */
+    /* align-items: center; */
+}
+
+@media (max-width: 767px) {
+    .features .container .feat-conta {
+        justify-content: center;
+    }
+
+}
+
+
+.features .container .feat {
+    margin: 20px;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.features .container .feat-conta .feat:nth-child(1) {
+    background-color: pink;
+}
+
+.features .container .feat-conta .feat:nth-child(2) {
+    background-color: green;
+}
+
+.features .container .feat-conta .feat:nth-child(3) {
+    background-color: yellow;
+}
+
+
+
+.features .container .feat h3 {
+    margin: 10px 0 10px 10px;
+    position: relative;
+}
+
+.features .container .feat p {
+    margin: 10px 0 10px 10px;
+}
+
+.features .container .feat h3 i {
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+/* ------------------- End Features ----------------- */
+
+/* ------------------- Choose Levels ----------------------- */
+
+.choose-level {
+    padding: var(--section-padding) 0;
+    background-color: #777;
+    text-align: center;
+}
+
+.choose-level .container {}
+
+.choose-level .container .levels {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.choose-level .container .levels .level {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+.choose-level .container .level .level-text {
+    margin-top: 30px;
+}
+
+.choose-level .container .level .level-text h3 {
+    margin: 0;
+}
+
+
+/* ------------------- Choose Levels ----------------------- */
